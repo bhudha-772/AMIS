@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Scrollbar configurations for trading views */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e2026;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #363a45;
+  border-radius: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #474f59;
+}
+
+/* Scrollbar None utility */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Swiss/Minimalist Light Mode Styling Overrides */
+.light-mode {
+  background-color: #f6f8fa !important;
+  color: #1f2328 !important;
+}
+
+.light-mode header,
+.light-mode .bg-\[\#12161a\],
+.light-mode .bg-\[\#16181a\],
+.light-mode .bg-\[\#1c1f24\],
+.light-mode .bg-\[\#1e2227\],
+.light-mode .bg-\[\#121416\],
+.light-mode .bg-\[\#13171d\],
+.light-mode .bg-\[\#181c22\],
+.light-mode .bg-\[\#1a1c22\],
+.light-mode .bg-\[\#1e2026\],
+.light-mode .bg-\[\#15181c\] {
+  background-color: #ffffff !important;
+  color: #1f2328 !important;
+}
+
+.light-mode .border-b,
+.light-mode .border-t,
+.light-mode .border,
+.light-mode .border-gray-800,
+.light-mode .border-\[\#24262b\],
+.light-mode .border-\[\#2b3036\],
+.light-mode .border-\[\#2e323a\],
+.light-mode .border-\[\#23272e\],
+.light-mode .border-\[\#282d35\],
+.light-mode .border-\[\#242930\] {
+  border-color: #d0d7de !important;
+}
+
+.light-mode .text-white,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4,
+.light-mode span.text-white {
+  color: #1f2328 !important;
+}
+
+.light-mode .text-\[\#eaecef\],
+.light-mode .text-\[\#848e9c\],
+.light-mode .text-gray-300,
+.light-mode .text-gray-400 {
+  color: #57606a !important;
+}
+
+.light-mode select,
+.light-mode input {
+  background-color: #f6f8fa !important;
+  color: #1f2328 !important;
+  border-color: #d0d7de !important;
+}
+
+.light-mode .bg-purple-950,
+.light-mode .bg-purple-950\/40,
+.light-mode .bg-purple-950\/25,
+.light-mode .bg-purple-900,
+.light-mode .bg-purple-900\/60,
+.light-mode .bg-gradient-to-r {
+  background: #f4ebff !important;
+  color: #6c2bd9 !important;
+  border-color: #d9bfff !important;
+}
+
+.light-mode .text-[#f0b90b],
+.light-mode .text-sky-400 {
+  color: #6c2bd9 !important;
+}
+

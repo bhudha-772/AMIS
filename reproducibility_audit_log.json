@@ -1,0 +1,113 @@
+{
+  "timestamp": "2026-07-18T12:50:10.331Z",
+  "auditStatus": "PASSED",
+  "isCrossValidated": true,
+  "isFullyDeterministic": true,
+  "syntheticSuites": [
+    {
+      "suite": "perfect",
+      "isCrossValidated": true,
+      "metrics": {
+        "accuracy": 1,
+        "balancedAccuracy": 1,
+        "mcc": 1,
+        "rocAuc": 1,
+        "logLoss": 0,
+        "brierScore": 0,
+        "ece": 0,
+        "mce": 0
+      }
+    },
+    {
+      "suite": "completely_random",
+      "isCrossValidated": true,
+      "metrics": {
+        "accuracy": 0.328,
+        "balancedAccuracy": 0.5251021146786619,
+        "mcc": 0.049766388674934506,
+        "rocAuc": 0.5251021146786619,
+        "logLoss": 1.6205282673230905,
+        "brierScore": 1.0008000000000001,
+        "ece": 0.4719999999999887,
+        "mce": 0.4719999999999887
+      }
+    },
+    {
+      "suite": "always_up",
+      "isCrossValidated": true,
+      "metrics": {
+        "accuracy": 1,
+        "balancedAccuracy": 0.5,
+        "mcc": 0,
+        "rocAuc": 0.5,
+        "logLoss": 0.10536051565782491,
+        "brierScore": 0.01500000000000019,
+        "ece": 0.10000000000001508,
+        "mce": 0.10000000000001508
+      }
+    },
+    {
+      "suite": "always_down",
+      "isCrossValidated": true,
+      "metrics": {
+        "accuracy": 1,
+        "balancedAccuracy": 0.5,
+        "mcc": 0,
+        "rocAuc": 0.5,
+        "logLoss": 0.10536051565782491,
+        "brierScore": 0.01500000000000019,
+        "ece": 0.10000000000001508,
+        "mce": 0.10000000000001508
+      }
+    },
+    {
+      "suite": "perfectly_calibrated",
+      "isCrossValidated": true,
+      "metrics": {
+        "accuracy": 0.614,
+        "balancedAccuracy": 0.5,
+        "mcc": 0,
+        "rocAuc": 0.7226249346002599,
+        "logLoss": 0.8375085416007726,
+        "brierScore": 0.48232000000000363,
+        "ece": 0.01759999999999474,
+        "mce": 0.028920570264758805
+      }
+    },
+    {
+      "suite": "overconfident",
+      "isCrossValidated": true,
+      "metrics": {
+        "accuracy": 0.405,
+        "balancedAccuracy": 0.5,
+        "mcc": 0,
+        "rocAuc": 0.5,
+        "logLoss": 2.2156570594247436,
+        "brierScore": 1.1044999999999934,
+        "ece": 0.5450000000000167,
+        "mce": 0.5450000000000167
+      }
+    },
+    {
+      "suite": "underconfident",
+      "isCrossValidated": true,
+      "metrics": {
+        "accuracy": 0.803,
+        "balancedAccuracy": 0.5,
+        "mcc": 0,
+        "rocAuc": 0.5,
+        "logLoss": 0.9729641001471513,
+        "brierScore": 0.5794000000000047,
+        "ece": 0.4030000000000057,
+        "mce": 0.4030000000000057
+      }
+    }
+  ],
+  "monteCarlo": {
+    "aggregateRuns": 50,
+    "totalPredictions": 5000,
+    "avgAccuracy": 0.601,
+    "avgECE": 0.04948000000000001,
+    "avgBrier": 0.5018640000000003
+  }
+}

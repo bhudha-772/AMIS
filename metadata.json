@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Binance Real-Time Price Tracker",
+  "description": "An advanced real-time trading and market research platform featuring a Binance price tracker, the JYSR option solver, and the Autonomous Market Intelligence System (AMIS) with a mathematically rigorous multi-horizon Probability Engine and durable persistent storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
