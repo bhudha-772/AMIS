@@ -1,0 +1,5 @@
+# Upstream checkouts and local envs are created by sync_upstream.py and never committed.
+upstream/
+.venv/
+__pycache__/
+*.pyc
